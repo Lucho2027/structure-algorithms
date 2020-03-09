@@ -1,21 +1,32 @@
 //FizzBuzz
 // 100 3 , fizz, 5 buzz, 3 &5 fizzbuzz
 
-const compose = (a, b) => data => a(b(data));
+// const compose = (a, b) => data => a(b(data));
 
-const fizzBuzz = num => {
-  const result = [];
-  for (let i = 0; i <= num; i++) {
-    if (i % 5 === 0 && i % 3 === 0) {
-      result.push(i);
-    }
+// const fizzBuzz = num => {
+//   const result = [];
+//   for (let i = 0; i <= num; i++) {
+//     if (i % 5 === 0 && i % 3 === 0) {
+//       result.push(i);
+//     }
+//   }
+//   return result;
+// };
+
+// const getThird = arr => {
+//   return arr[2];
+// };
+
+// const composedFizzbuzz = compose(getThird, fizzBuzz);
+// console.log(composedFizzbuzz(100));
+
+// Recursion Fibo
+
+const fib = num => {
+  if (num < 2) {
+    return num;
   }
-  return result;
-};
 
-const getThird = arr => {
-  return arr[2];
+  return fib(num - 1) + fib(num - 2);
 };
-
-const composedFizzbuzz = compose(getThird, fizzBuzz);
-console.log(composedFizzbuzz(100));
+console.log(fib(51));

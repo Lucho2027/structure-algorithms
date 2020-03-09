@@ -1,4 +1,4 @@
-//######################Example of the module######################
+// // ######################Example of the module######################
 // const sumOf = function(list) {
 //   if (list.length === 1) {
 //     return list[0];
@@ -9,7 +9,7 @@
 // let lst = [2, 4, 6, 8, 10];
 // console.log(sumOf(lst));
 
-//###################Counting Sheep#################################
+// ###################Counting Sheep#################################
 
 // const jumpSheep = function(sheep) {
 //   //base case or final stance get out of loop
@@ -21,7 +21,7 @@
 //   console.log(sheep, "Another sheep jumps over the fence");
 //   jumpSheep(sheep - 1);
 // };
-// jumpSheep(10);
+// console.log(jumpSheep(10000));
 
 //#####################Power Calculator ############################
 // const powerCalculator = function(base, exponent) {
@@ -55,5 +55,3 @@
 // console.log(triangle(3));
 
 //#####################String Splitter############################
-
-
